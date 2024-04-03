@@ -70,10 +70,12 @@ public class Person implements UserDetails {
   public void setRole(Role role) {
     this.role = role;
   }
+
   @Override
   public boolean isAccountNonExpired() {
     return true;
   }
+
   @Override
   public boolean isAccountNonLocked() {
     return true;

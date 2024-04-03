@@ -52,7 +52,7 @@ public class AppSecurityConfig {
 
   @Bean
   public AuthenticationManager customAuthenticationManager(
-      AuthenticationConfiguration authenticationConfiguration) throws Exception{
+      AuthenticationConfiguration authenticationConfiguration) throws Exception {
     return authenticationConfiguration.getAuthenticationManager();
   }
 
