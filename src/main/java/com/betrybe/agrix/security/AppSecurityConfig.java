@@ -22,6 +22,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
  */
 @Configuration
 @EnableWebSecurity
+@EnableMethodSecurity(securedEnabled = true)
+
 public class AppSecurityConfig {
 
   private final AuthenticationTokenFilter authenticationTokenFilter;
