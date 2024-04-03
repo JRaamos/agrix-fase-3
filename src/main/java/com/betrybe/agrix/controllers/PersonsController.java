@@ -36,5 +36,5 @@ public class PersonsController {
     );
     PersonResponse personResponse = personResponseConvert(person);
     return ResponseEntity.status(HttpStatus.CREATED).body(personResponse);
-  };
+  }
 }

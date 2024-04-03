@@ -12,7 +12,7 @@ public class PersonUtil {
   /**
    *  Metodo para DTO convert.
    */
-  public static PersonResponse personResponseConvert(Person person){
+  public static PersonResponse personResponseConvert(Person person) {
     return new PersonResponse(
         person.getId(),
         person.getUsername(),
@@ -35,12 +35,12 @@ public class PersonUtil {
   /**
    *  Metodo para DTO convert.
    */
-  public static Person persoDtoCreateConvertUser(PersonResquest PersonResquest) {
+  public static Person persoDtoCreateConvertUser(PersonResquest personResquest) {
     Person person = new Person();
 
-    person.setUsername(PersonResquest.username());
-    person.setPassword(PersonResquest.password());
-    person.setRole(PersonResquest.role());
+    person.setUsername(personResquest.username());
+    person.setPassword(personResquest.password());
+    person.setRole(personResquest.role());
 
     return person;
   }
